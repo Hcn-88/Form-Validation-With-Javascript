@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/583e6bcfcb.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="form">
+        <form>
+            <div class="first">
+                <input id="fname" type="text" required onkeyup="validName()">
+                <label for="fname"><i class="fa-solid fa-user"></i> Full Name</label>
+                <span id="fixTheName"></span>
+            </div>
+            <div class="first">
+                <input id="number" type="tel" required onkeyup="validNumber()">
+                <label for="number"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                <span id="fixTheNumber"></span>
+            </div>
+            <div class="first">
+                <input id="email" type="email" required onkeyup="validMail()">
+                <label for="email"><i class="fa-solid fa-at"></i> Email Address</label>
+                <span id="fixTheMail"></span>
+            </div>
+            <div class="first">
+                <textarea id="message" rows="10" required onkeyup="validMessage()"></textarea>
+                <label for="message"><i class="fa-solid fa-envelope"></i> Message</label>
+                <span id="fixTheMessage"></span>
+            </div>
+            <button onclick="submitMessage()">Send <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <span id="fixTheError"></span>
+    </div>
+</body>
+</html>

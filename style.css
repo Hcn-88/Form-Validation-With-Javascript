@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.form{
+    width: 40%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+form{
+    width: 100%;
+}
+
+form .first{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+form span{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    color: red;
+}
+
+form span i{
+    color: green;
+}
+
+.form #fixTheError{
+    color: red;
+    font-weight: bold;
+}
+
+form label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    padding: 6px;
+    cursor: text;
+    transition: .2s;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -30px;
+    font-size: 1rem;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 10px;
+    background: rgba(171, 227, 236, 0.5);
+    border: 1px solid silver;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px 0;
+    background: rgba(171, 227, 236, 0.5);
+    border: 1px solid silver;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .6s;
+}
+
+form i{
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+form button:hover{
+    background: rgba(38, 110, 121, 0.5);
+}
+
+@media (max-width: 1000px){
+    .form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px){
+    .form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 750px){
+    .form{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+    .form{
+        width: 90%;
+    }
+}
